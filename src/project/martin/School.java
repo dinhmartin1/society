@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 
 public class School {
+	private HashMap<String, List<Student>> registrations = new HashMap<String,List<Student>>();
 	//private String name;
 	//private ArrayList<Student> freshmen;
 	//private ArrayList<Student> sophomore;
@@ -12,8 +13,7 @@ public class School {
 	//private ArrayList<Student> reject;
 	
 	public School(String schoolName){
-		HashMap<String, List<Student>> registrations = new HashMap<String,List<Student>>();
-		
+			
 		registrations.put("freshmen",new ArrayList<Student>());
 		registrations.put("sophomore",new ArrayList<Student>());
 		registrations.put("senior",new ArrayList<Student>());
@@ -27,21 +27,30 @@ public class School {
 	}
 	
 	public String register(Student someone){
-		someone.getAge();
 		if(someone.getAge() <= 9){
-			return freshmen;
+			registrations.get("freshmen").add(someone);
+			return "freshmen";
 		}
 		else if(someone.getAge() > 9 && someone.getAge() <= 13){
-			return sophomore;
+			registrations.get("sophomore").add(someone);
+			return "sophomore";
 		}
 		else if(someone.getAge() > 13 && someone.getAge() <= 18){
-			return senior;
+			registrations.get("senior").add(someone);
+			return "senior";
 		}
 		else{
-			return reject;
+			registrations.get("reject").add(someone);
+			return "reject";
 		}
 	}
 	
+	public void printRoster() {
+		List<Student> newcomer = registrations.get("freshmen");
+		for(int i = 0; i < newcomer.size(); i++) {
+            System.out.println(newcomer.get(i).getName());
+        }
+	}
 	//public void printFreshmen(){
 	//	for(Student newStudent: freshmen){
 	//		System.out.println(newStudent.getAge());
