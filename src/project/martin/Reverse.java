@@ -1,5 +1,8 @@
 package project.martin;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Reverse {
 
 	/*public static void main(String[] args) {
@@ -10,21 +13,28 @@ public class Reverse {
 			System.out.print(" ");
 		}
 	}
-	
-	String givenWord = "Hello";
+}*/
+	/*String givenWord = "Hello";
 	public static String reverseFunction(String givenWord) {
 		String reverse = givenWord.substring(1,givenWord.length()) + givenWord.charAt(0);
 		return reverse;
 	}*/
-	private String word;
+	private String[] word;
 	
-	public Reverse(String givenWord) {
+	public Reverse(String[] givenWord) {
 		this.word = givenWord;
 	}
 	
-	public String reverseWord() {
-		String function = word.substring(word.length(),word.length()) + word.charAt(5) + word.charAt(4) + word.charAt(3) + word.charAt(2) + word.charAt(1) + word.charAt(0);
-		return function;
+	public String reverseWord(String[] args) {
+		String blank = "";
+		
+		for(int i = 0; i < word.length; i++) {
+			for (int j = word[i].length()-1; j >= 0; j--) {
+				blank = blank + (word[i].charAt(j));
+			}
+			blank = blank + " ";
+		}
+		return blank;
 	}
 	
 	public String toString() {
@@ -32,7 +42,15 @@ public class Reverse {
 	}
 	
 	public static void main(String args[]) {  
-		Reverse s1 = new Reverse("martin");   
-		System.out.print(s1.reverseWord());
+		Reverse words = new Reverse(args);   
+		System.out.print(words.reverseWord(args));
 	}
-}
+
+	/*public int addition(int[] integers) {
+		int sum = 0;
+		for (int i: integers) {
+	        sum += i;
+	    }
+		return sum;
+	}*/
+ }
