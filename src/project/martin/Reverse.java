@@ -1,8 +1,5 @@
 package project.martin;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Reverse {
 
 	/*public static void main(String[] args) {
@@ -14,6 +11,7 @@ public class Reverse {
 		}
 	}
 }*/
+
 	private String[] word;
 	
 	public Reverse(String[] givenWord) {
@@ -40,12 +38,4 @@ public class Reverse {
 		Reverse words = new Reverse(args);   
 		System.out.print(words.reverseWord(args));
 	}
-
-	/*public int addition(int[] integers) {
-		int sum = 0;
-		for (int i: integers) {
-	        sum += i;
-	    }
-		return sum;
-	}*/
  }
