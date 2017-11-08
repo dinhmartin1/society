@@ -14,11 +14,6 @@ public class Reverse {
 		}
 	}
 }*/
-	/*String givenWord = "Hello";
-	public static String reverseFunction(String givenWord) {
-		String reverse = givenWord.substring(1,givenWord.length()) + givenWord.charAt(0);
-		return reverse;
-	}*/
 	private String[] word;
 	
 	public Reverse(String[] givenWord) {
