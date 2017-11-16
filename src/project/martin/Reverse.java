@@ -18,7 +18,7 @@ public class Reverse {
 		this.word = givenWord;
 	}
 	
-	public String reverseWord(String[] args) {
+	public String reverseWord() {
 		String blank = "";
 		
 		for(int i = 0; i < word.length; i++) {
@@ -36,6 +36,6 @@ public class Reverse {
 	
 	public static void main(String args[]) {  
 		Reverse words = new Reverse(args);   
-		System.out.print(words.reverseWord(args));
+		System.out.print(words.reverseWord());
 	}
  }
