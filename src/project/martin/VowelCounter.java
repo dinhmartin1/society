@@ -1,39 +1,26 @@
 package project.martin;
 
-import java.util.ArrayList;
-import java.util.HashMap;
+/*import java.util.ArrayList;
+import java.util.HashMap;*/
 
 public class VowelCounter {
-	private HashMap<String, Integer> eachVowel = new HashMap<String, Integer>();
+	/*private HashMap<String, Integer> eachVowel = new HashMap<String, Integer>();
 	
-	public VowelCounter(){
+	public VowelCounter(String sentence){
 		
-		eachVowel.put("a",0);
-		eachVowel.put("e",0);
-		eachVowel.put("i",0);
-		eachVowel.put("o",0);
-		eachVowel.put("u",0);
+		eachVowel.put("vowelA",0);
+		eachVowel.put("vowelE",0);
+		eachVowel.put("vowelI",0);
+		eachVowel.put("vowelO",0);
+		eachVowel.put("vowelU",0);
 	}
-	
-	public String getVowel(Vowel sentence){
-		if(sentence.getLetter() == 'a'){
-			eachVowel.get("a").add(sentence);
-			return "a";
-		}
-		else if(sentence.getLetter() == 'e'){
-			eachVowel.get("e").add(sentence);
-			return "e";
-		}
-		else if(sentence.getLetter() == 'i'){
-			eachVowel.get("i").add(sentence);
-			return "i";
-		}
-		else if(sentence.getLetter() == 'o'){
-			eachVowel.get("o").add(sentence);
-			return "o";
-		}
-		else if(sentence.getLetter() == 'u'){
-			eachVowel.get("u").add(sentence);
-			return "u";
+	*/
+	public String getVowel(){
+		int VowelA = 0;
+		int VowelE = 0;
+		int VowelI = 0;
+		int VowelO = 0;
+		int VowelU = 0;
+		return null;
 	}
 }
