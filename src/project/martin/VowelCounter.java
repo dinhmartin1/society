@@ -15,12 +15,34 @@ public class VowelCounter {
 		eachVowel.put("vowelU",0);
 	}
 	*/
-	public String getVowel(){
-		int VowelA = 0;
-		int VowelE = 0;
-		int VowelI = 0;
-		int VowelO = 0;
-		int VowelU = 0;
-		return null;
-	}
+	
+	public String countVowels(String sentence){
+        int vowelA = 0;
+        int vowelE = 0;
+        int vowelI = 0;
+        int vowelO = 0;
+        int vowelU = 0;
+        
+        String vowel = "";
+        vowel = vowel + vowelA + vowelE + vowelI + vowelO + vowelU;
+        
+        for (int i = 0; i < sentence.length(); i++){
+        	if (sentence.charAt(i) == 'a'){
+        		vowelA++;
+        	}
+        	else if (sentence.charAt(i) == 'e'){
+        		vowelE++;
+        	}
+        	else if (sentence.charAt(i) == 'i'){
+        		vowelI++;
+        	}
+        	else if (sentence.charAt(i) == 'O'){
+        		vowelO++;
+        	}
+        	else{
+        		vowelU++;
+        	}
+        }
+        return vowel;
+    }
 }
