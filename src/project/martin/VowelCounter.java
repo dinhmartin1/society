@@ -30,26 +30,25 @@ public class VowelCounter {
 	public void countVowels(String word) {
 		for(int i = 0; i < word.length(); i++) {
 			if(word.charAt(i) == 'A' || word.charAt(i) == 'a') {
-				numberOfA++;
 				System.out.println("Number of A: ");
+				numberOfA++;
 			}
-			else if(word.charAt(i) == 'E' || word.charAt(i) == 'e') {
-				numberOfE++;
+			/*else if(word.charAt(i) == 'E' || word.charAt(i) == 'e') {
 				System.out.println("Number of E: ");
-			}
-			else if(word.charAt(i) == 'I' || word.charAt(i) == 'i') {
-				numberOfI++;
+				numberOfE++;
+			}*/
+			/*else if(word.charAt(i) == 'I' || word.charAt(i) == 'i') {
 				System.out.println("Number of I: ");
+				numberOfI++;
 			}
 			else if(word.charAt(i) == 'O' || word.charAt(i) == 'o') {
-				numberOfO++;
 				System.out.println("Number of O: ");
+				numberOfO++;
 			}
 			else if(word.charAt(i) == 'U' || word.charAt(i) == 'u') {
-				numberOfU++;
 				System.out.println("Number of U: ");
-			}
-			
+				numberOfU++;
+			}*/
 		}
 		//System.out.print("Number of A: ");
 	}
