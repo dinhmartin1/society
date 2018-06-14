@@ -13,7 +13,7 @@ public class VowelCounter {
 	
 	public int getNumberOfE() { 
         return numberOfE; 
-    } 
+    }
 	
 	public int getNumberOfI() { 
         return numberOfI; 
@@ -30,26 +30,25 @@ public class VowelCounter {
 	public void countVowels(String word) {
 		for(int i = 0; i < word.length(); i++) {
 			if(word.charAt(i) == 'A' || word.charAt(i) == 'a') {
-				System.out.println("Number of A: ");
 				numberOfA++;
+				System.out.println("numberOfA");
 			}
-			/*else if(word.charAt(i) == 'E' || word.charAt(i) == 'e') {
-				System.out.println("Number of E: ");
+			if(word.charAt(i) == 'E' || word.charAt(i) == 'e') {
 				numberOfE++;
-			}*/
-			/*else if(word.charAt(i) == 'I' || word.charAt(i) == 'i') {
-				System.out.println("Number of I: ");
+				System.out.println("numberOfE");
+			}
+			if(word.charAt(i) == 'I' || word.charAt(i) == 'i') {
 				numberOfI++;
+				System.out.println("numberOfI");
 			}
-			else if(word.charAt(i) == 'O' || word.charAt(i) == 'o') {
-				System.out.println("Number of O: ");
+			if(word.charAt(i) == 'O' || word.charAt(i) == 'o') {
 				numberOfO++;
+				System.out.println("numberOfO");
 			}
-			else if(word.charAt(i) == 'U' || word.charAt(i) == 'u') {
-				System.out.println("Number of U: ");
+			if(word.charAt(i) == 'U' || word.charAt(i) == 'u') {
 				numberOfU++;
-			}*/
+				System.out.println("numberOfU");
+			}
 		}
-		//System.out.print("Number of A: ");
 	}
 }
