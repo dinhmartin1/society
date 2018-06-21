@@ -31,24 +31,24 @@ public class VowelCounter {
 		for(int i = 0; i < word.length(); i++) {
 			if(word.charAt(i) == 'A' || word.charAt(i) == 'a') {
 				numberOfA++;
-				System.out.println("numberOfA");
 			}
 			if(word.charAt(i) == 'E' || word.charAt(i) == 'e') {
 				numberOfE++;
-				System.out.println("numberOfE");
 			}
 			if(word.charAt(i) == 'I' || word.charAt(i) == 'i') {
 				numberOfI++;
-				System.out.println("numberOfI");
+
 			}
 			if(word.charAt(i) == 'O' || word.charAt(i) == 'o') {
 				numberOfO++;
-				System.out.println("numberOfO");
 			}
 			if(word.charAt(i) == 'U' || word.charAt(i) == 'u') {
 				numberOfU++;
-				System.out.println("numberOfU");
 			}
 		}
 	}
+	
+	public String countAllVowels() {
+        return "Number of A:" + getNumberOfA() + "\n" + "Number of E:" + getNumberOfE() + "\n" + "Number of I:" + getNumberOfI() + "\n" + "Number of O:" + getNumberOfO() + "\n" + "Number of U:" + getNumberOfU();
+    }
 }
